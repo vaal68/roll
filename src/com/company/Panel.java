@@ -8,38 +8,56 @@ import java.util.Random;
 
 public class Panel extends JFrame {
 
-    JButton d4, d6, d8, d10, d12, d20;
+    private JButton d4, d6, d8, d10, d12, d20;
 
 
     public Panel() {
 
 
         super("RollDice");
-        super.setBounds(600, 300, 700, 300);
+        super.setBounds(500, 100, 1000, 800);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Container window = super.getContentPane();
-        window.setLayout(new BoxLayout(window, BoxLayout.X_AXIS));
+        window.setLayout(new FlowLayout(FlowLayout.CENTER));
 
         JLabel roll = new JLabel(" Нажми что бы бросить: ");
         d4 = new JButton("D4");
-        d4.setIcon(new ImageIcon("images/d4.png"));
-        d4.setPreferredSize(new Dimension(110, 110));
+        d4.setIcon(new ImageIcon("com/company/images/d4.png"));
+        d4.setPreferredSize(new Dimension(200, 200));
+        d4.setBorderPainted(false);
+        d4.setFocusPainted(false);
+        d4.setContentAreaFilled(false);
         d6 = new JButton("D6");
-        d6.setIcon(new ImageIcon("images/d6.png"));
-        d6.setPreferredSize(new Dimension(110, 110));
+        d6.setIcon(new ImageIcon("com/company/images/d6.png"));
+        d6.setPreferredSize(new Dimension(200, 200));
+        d6.setBorderPainted(false);
+        d6.setFocusPainted(false);
+        d6.setContentAreaFilled(false);
         d8 = new JButton("D8");
-        d8.setIcon(new ImageIcon("images/d8.png"));
-        d8.setPreferredSize(new Dimension(110, 110));
+        d8.setIcon(new ImageIcon("com/company/images/d8.png"));
+        d8.setPreferredSize(new Dimension(200, 200));
+        d8.setBorderPainted(false);
+        d8.setFocusPainted(false);
+        d8.setContentAreaFilled(false);
         d10 = new JButton("D10");
-        d10.setIcon(new ImageIcon("images/d10.png"));
-        d10.setPreferredSize(new Dimension(110, 110));
+        d10.setIcon(new ImageIcon("com/company/images/d10.png"));
+        d10.setPreferredSize(new Dimension(200, 200));
+        d10.setBorderPainted(false);
+        d10.setFocusPainted(false);
+        d10.setContentAreaFilled(false);
         d12 = new JButton("D12");
-        d12.setIcon(new ImageIcon("images/d12.png"));
-        d12.setPreferredSize(new Dimension(110, 110));
+        d12.setIcon(new ImageIcon("com/company/images/d12.png"));
+        d12.setPreferredSize(new Dimension(200, 200));
+        d12.setBorderPainted(false);
+        d12.setFocusPainted(false);
+        d12.setContentAreaFilled(false);
         d20 = new JButton("D20");
-        d20.setIcon(new ImageIcon("images/d20.png"));
-        d20.setPreferredSize(new Dimension(110, 110));
+        d20.setIcon(new ImageIcon("com/company/images/d20.png"));
+        d20.setPreferredSize(new Dimension(200, 200));
+        d20.setBorderPainted(false);
+        d20.setFocusPainted(false);
+        d20.setContentAreaFilled(false);
 
 
         window.add(roll);
